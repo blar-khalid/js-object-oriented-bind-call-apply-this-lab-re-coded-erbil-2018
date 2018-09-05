@@ -1,3 +1,3 @@
 function justInvoke(functioon){
-  return this.functioon
+  return functioon
 }
