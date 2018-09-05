@@ -9,7 +9,7 @@ function setThisWithApply(func,objectt, arg) {
   return func.apply(objectt,arg);
 }
 
-function returnNewFunctionOf(functionToBeCopied, thisValue) {
-  const copy = functionToBeCopied.bind(thisValue);
-  return copy;
+function returnNewFunctionOf(functionToBeCopied,objectt) {
+  const newObject = functionToBeCopied.bind(objectt);
+  return newObject;
 }
